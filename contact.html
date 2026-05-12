@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact of 360° Edibles</title>
+    <link rel="icon" type="image" href="CEO.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+     <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+        <div class="logo">
+            <img src="Logo.png" alt="360° Edibles Logo">
+        </div>
+        <div class="logo-text">
+            <h1>Customer Support</h1>
+        </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">360° Edibles</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="services.html">Products & Services</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- A contact form with the following fields:Name, Email, Message 
+* JavaScript validation is required
+* Include address, phone number, or social media links 
+-->
+<div class="container">
+    <h2>Contact Us</h2>
+
+    <div class="contact-form">
+        <form id="contactForm">
+            <input type="text" id="fullname" placeholder="Enter your full name">
+            <div class="error" id="nameError"></div>
+            
+            <input type="email" id="email" placeholder="Enter your email">
+            <div class="error" id="emailError"></div>
+        
+            <textarea id="message" rows="5" cols="10" placeholder="Your message"></textarea>
+            <div class="error" id="messageError"></div>
+
+            <button type="submit">Send Message</button>
+        </form>
+            <p class="success" id="successMessage"></p>
+    </div>
+</div>
+
+    <div class="contact-grid mx-5">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Address:</strong>1,Musili street, Oko-Oba,Agege, Lagos.</p>
+            <p><strong>Phone:</strong> 08160302006</p>
+            <p><strong>Email:</strong> info@360edibles.ng</p>
+        </div>
+
+        <div class="social-section my-5">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+            <a href="https://instagram.com/360degree_edibles" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@360degreeedibles" target="_blank">TikTok</a>
+            <a href="https://wa.me/2348030000000" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+ <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy 2026 - 360° Edibles. All Rights Reserved. <br>
+            Lagos, Nigeria
+        </p>
+    </footer>
+    
+<!-- JAVASCRIPT -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let name = document.getElementById("fullname").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    let nameError = document.getElementById("nameError");
+    let emailError = document.getElementById("emailError");
+    let messageError = document.getElementById("messageError");
+    let successMessage = document.getElementById("successMessage");
+    
+
+    nameError.textContent = "";
+    emailError.textContent = "";
+    messageError.textContent = "";
+    successMessage.textContent = "";
+    
+    let isValid = true;
+  
+     if (name === ""){     
+        nameError.textContent = "Name is compulsory";
+        isValid = false;
+    }
+
+    // email Validation
+    if (email === ""){     
+        emailError.textContent = "Email is compulsory";
+        isValid = false;
+    }
+    else if (!/\S+@\S+\.\S+/.test(email)){
+        emailError.textContent = "Enter a valid email";
+        isValid = false;
+    }
+
+    // message Validation
+    if (message === ""){     
+        messageError.textContent = "Message is compulsory, can't be empty";
+        isValid = false;
+    }
+
+    // Check for successful validation
+    if (isValid){
+        successMessage.textContent = "Message sent successfully!";
+        document.getElementById("contactForm").reset();
+    }
+
+
+
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

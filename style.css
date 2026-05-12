@@ -1,0 +1,190 @@
+body{
+<<<<<<< HEAD
+    padding-top: 90px;
+=======
+    padding-top: 140px;
+}
+.navbar{
+    padding: 5px 20px;
+>>>>>>> 474e41305f59b1c5029a905b683cf54c189434da
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+.offcanvas-title{
+    font-weight: bold;
+    color: purple;
+}
+.nav-link{
+    font-weight: bold;
+    margin-left: 15px;
+}
+.nav-link:hover{
+    color: purple;
+}
+.logo-text{
+    color: purple;
+    font-weight: bolder;
+<<<<<<< HEAD
+}
+.logo-text h1{
+    font-size: 35px;
+    margin: 0;
+=======
+    font-size: 30px;
+>>>>>>> 474e41305f59b1c5029a905b683cf54c189434da
+}
+.logo-text p{
+    font-size: 16px;
+    color: plum;
+    margin: 0;
+    text-align: left;
+}
+.hero-container{
+    height:100vh;
+    background: linear-gradient(150deg,
+        rgba(234, 14, 234, 0.5)30%,
+        rgba(215, 8, 215, 0.7) 70%), url("360°\ Edibles\ team.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+<<<<<<< HEAD
+    text-align: center;
+    padding: 30px 15px;
+=======
+    padding: 20px;
+>>>>>>> 474e41305f59b1c5029a905b683cf54c189434da
+}
+.hero-container p{
+    font-size: 22px;
+    color: blanchedalmond;
+    font-weight: bold;
+<<<<<<< HEAD
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 30px;
+=======
+    max-width: 900px;
+>>>>>>> 474e41305f59b1c5029a905b683cf54c189434da
+}
+.hero-container h1{
+    font-size: 45px;
+    color: rgb(247, 204, 247);
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+button{
+    background-color: plum;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 2px solid purple;
+    color: rgb(105, 0, 105);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.btn{
+    text-decoration: none;
+    color: rgb(105, 0, 105);
+    background: linear-gradient(wheat);
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 2px solid purple;
+    padding:15px 25px;
+    border-radius: 15px 5px;   
+}
+.btn:hover, button:hover{
+    color: black;
+    border: 2px solid transparent;
+    background: linear-gradient(wheat, rgb(240, 28, 240));
+    font-weight: bolder;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+.pdt{
+    background-color: rgb(244, 229, 244);
+    padding: 40px 15px;
+}
+.pdt ul{
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.pdt li{
+    padding: 12px 0;
+    font-size: 18px;
+}
+.pdt h4{
+    font-size: 32px;
+    color: purple;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.pdt a{
+    text-decoration: none;
+    color: rgb(251, 189, 74);
+}
+.pdt a:hover{
+    color: purple;
+}
+footer{
+    background-color:darkgray;
+    padding: 25px 15px;
+}
+footer p{
+    text-align: center;
+    font-family: cursive;
+    font-size: 16px;
+    color: rgb(72, 2, 72);
+    font-weight: bold;
+<<<<<<< HEAD
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+    body {
+        padding-top: 75px;
+    }
+    .logo img{
+        height: 55px;
+        width: 55px;
+    }
+    .logo-text h1{
+        font-size: 20px;
+    }
+    .logo-text p{
+        font-size: 12px;
+    }
+    .hero-container{
+        min-height: 90vh;
+        padding: 80px 15px 60px;
+    }
+    .hero-container h1{
+        font-size: 32px;
+    }
+    .hero-container p{
+        font-size: 18px;
+    }
+    button, .btn{
+        padding: 14px 22px;
+        font-size: 15px;
+    }
+}
+=======
+}
+@media(max-width:768px){
+    body{
+        padding-top: 110px;
+    }
+}
+>>>>>>> 474e41305f59b1c5029a905b683cf54c189434da
